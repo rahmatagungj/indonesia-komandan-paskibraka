@@ -15,7 +15,6 @@ class komandanPaskibraka {
         listOfPerson.push(nama);
       }
     });
-    console.log(tempArray, "ini member");
     return {
       totalPerson: listOfPerson.length,
       listOfPerson: listOfPerson,
