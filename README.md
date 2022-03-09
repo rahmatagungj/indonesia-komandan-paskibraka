@@ -27,23 +27,22 @@ lastPerson = "Hendra"
 ### Output
 
 ```js
-{
-  totalPerson: 13, // jumlah orang yang berada antara orang pertama dan orang terakhir
-  listOfPerson: [
-    "Dito",
-    "Yudha",
-    "Agung",
-    "Udin",
-    "Fitri",
-    "Ridho",
-    "Alfa",
-    "Budi",
-    "Caca",
-    "Dito",
-    "Eko",
-    "Firman",
-    "Gede",
-  ] // nama orang yang berada antara orang pertama dan orang terakhir
+totalPerson: 13, // jumlah orang yang berada antara orang pertama dan orang terakhir
+listOfPerson: [
+  "Dito",
+  "Yudha",
+  "Agung",
+  "Udin",
+  "Fitri",
+  "Ridho",
+  "Alfa",
+  "Budi",
+  "Caca",
+  "Dito",
+  "Eko",
+  "Firman",
+  "Gede",
+] // nama orang yang berada antara orang pertama dan orang terakhir
 ```
 
 ## Instructions
