@@ -1,10 +1,10 @@
 # Komandan Paskibraka
 
-Dalam kasus ini kamu perlu menghitung jumlah orang yang berada pada setiap baris pasukan paskibraka. Misalnya ada `5 baris` dan setiap barisnya terdapat `4` orang yang berbaris, maka bentuk formasinya adalah:
+Dalam kasus ini kamu perlu menghitung jumlah orang yang berada pada setiap baris pasukan paskibraka. Misalnya ada `5 baris` dan setiap barisnya terdapat `4` orang, maka bentuk formasinya adalah:
 
-    | 5  | 4  | 3  | 2  | 1  |
+    | 1  | 2  | 3  | 4  | 5  |
     | 6  | 7  | 8  | 9  | 10 |
-    | 15 | 14 | 13 | 12 | 11 |
+    | 11 | 12 | 13 | 14 | 15 |
     | 16 | 17 | 18 | 19 | 20 |
 
 Sebagai komandan, kamu akan menghitung jumlah orang dan menampilkan namanya yang berada antara orang pertama (`yang sudah ditentukan`) hingga orang terakhir (`yang sudah ditentukan`).
