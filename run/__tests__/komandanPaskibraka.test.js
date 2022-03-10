@@ -165,6 +165,20 @@ describe("Deep Test", () => {
     expect(komandan.findAndCountPerson(true, "Hendra").totalPerson).toStrictEqual(0)
   })
 
+  it("Test Case #9", () => {
+    const member = [
+      ["Budi", "Julio", "Yudha"],
+      ["Agung", "Udin", "Fitri", "Ridho"],
+      ["Alfa", "Budi", "Caca", "Dito"],
+      ["Eko", "Firman", "Gede", "Agung", "Hendra"],
+      ["Icha", "Julio", "Kaca", "Lulu"],
+    ]
+
+    const komandan = new komandanPaskibraka("Budi", member)
+    const expected = []
+    expect(komandan.findAndCountPerson("Agung", "Budi").listOfPerson).toEqual(expected)
+  })
+
   it("Test Case #10", () => {
     const member = [
       ["Budi", "Julio", "Yudha"],
@@ -177,21 +191,7 @@ describe("Deep Test", () => {
     const komandan = new komandanPaskibraka("Budi", member)
     const expected = ["Ridho", "Alfa", "Budi", "Caca", "Dito", "Eko", "Firman", "Gede"]
     expect(komandan.findAndCountPerson("Fitri Andini", "Hendra").listOfPerson).toEqual(expected)
-  })
-
-  it("Test Case #9", () => {
-    const member = [
-      ["Budi", "Julio", "Yudha"],
-      ["Agung", "Udin", "Fitri", "Ridho"],
-      ["Alfa", "Budi", "Caca", "Dito"],
-      ["Eko", "Firman", "Gede", "Hendra"],
-      ["Icha", "Julio", "Kaca", "Lulu"],
-    ]
-
-    const komandan = new komandanPaskibraka("Budi", member)
-    const expected = ["Udin", "Fitri", "Ridho", "Alfa"]
-    expect(komandan.findAndCountPerson("Agung", "Budi").listOfPerson).toEqual(expected)
-  })  
+  }) 
 
   it("Test Case #11", () => {
     const member = [
