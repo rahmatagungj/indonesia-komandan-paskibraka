@@ -1,4 +1,4 @@
-# Komandan Paskibraka
+# Komandan Paskibraka (Extended)
 
 Dalam kasus ini kamu perlu menghitung jumlah orang yang berada pada setiap baris pasukan paskibraka. Misalnya ada `5 baris` dan setiap barisnya terdapat `4` orang, maka bentuk formasinya adalah:
 
