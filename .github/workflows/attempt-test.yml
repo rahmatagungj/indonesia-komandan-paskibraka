@@ -1,0 +1,24 @@
+name: Attempt to test the full test suite
+on: pull_request
+
+jobs:
+  attempt:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout ${{ github.repository }} @ ${{ github.ref }}
+      uses: actions/checkout@v2
+    - name: Install NodeJs
+      uses: actions/setup-node@v1
+      with: 
+        node-version: 16.x
+    - name: Get changed files using defaults
+      id: changed-files
+      uses: tj-actions/changed-files@v17.3
+    - name: setup
+      run: |
+        file=${{ steps.changed-files.outputs.added_files }}
+        filename=${file##*/}
+        echo "$file was added"
+        cp -f "$file" "./$filename"
+    - name: run test suite
+      run: node run
