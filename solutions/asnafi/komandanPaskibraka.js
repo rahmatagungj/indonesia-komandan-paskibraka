@@ -5,13 +5,12 @@ class komandanPaskibraka {
   }
 
   findAndCountPerson(firstPerson, lastPerson) {
-    const paskibrakaMember = [].concat(...member)
+    if (typeof firstPerson == "undefined" || lastPerson == "undefined") return { totalPerson: 0, listOfPerson: [] }
 
-    const firstPersonIndex = paskibrakaMember.indexOf(firstPerson)
-    paskibrakaMember.splice(0, firstPersonIndex + 1)
+    const paskibrakaMember = [].concat(...this.member)
 
-    const lastPersonIndex = paskibrakaMember.indexOf(lastPerson)
-    paskibrakaMember.splice(lastPersonIndex)
+    paskibrakaMember.splice(0, paskibrakaMember.indexOf(firstPerson) + 1)
+    paskibrakaMember.splice(paskibrakaMember.indexOf(lastPerson))
 
     return {
       totalPerson: paskibrakaMember.length,
