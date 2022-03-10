@@ -43,8 +43,8 @@ lastPerson = "Hendra"
     "Eko",
     "Firman",
     "Gede",
-  ]
-} // nama orang yang berada antara orang pertama dan orang terakhir
+  ] // nama orang yang berada antara orang pertama dan orang terakhir
+} 
 ```
 
 ## Instructions
