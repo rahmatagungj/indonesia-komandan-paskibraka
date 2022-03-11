@@ -11,14 +11,14 @@ jobs:
       uses: actions/setup-node@v1
       with: 
         node-version: 16.x
-    - name: Get changed files using defaults
+    - name: Get solution file
       id: changed-files
       uses: tj-actions/changed-files@v17.3
-    - name: setup
+    - name: Preparing test
       run: |
         file=${{ steps.changed-files.outputs.added_files }}
         filename=${file##*/}
         echo "$file was added"
         cp -f "$file" "./$filename"
-    - name: run test suite
+    - name: Testing solution 
       run: node run
