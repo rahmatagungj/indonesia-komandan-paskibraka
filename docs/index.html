@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OwnCode - indonesia komandan paskibraka</title>
+    <meta name="description" content="OwnCode - indonesia komandan paskibraka" />
+    <meta name="keywords" content="owncode, indonesia komandan paskibraka" />
+    <meta name="author" content="Rahmat Agung Julians" />
+    <meta name="robots" content="index, follow" />
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="./style/style.css" />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+      <div class="container">
+        <a class="navbar-brand" href="#">OwnCode</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#question">Question</a>
+            <a class="nav-link" href="#submited-solutions"
+              >Submited Solutions</a
+            >
+            <a class="nav-link" href="#input">Input</a>
+            <a class="nav-link" href="#question">Output</a>
+            <a class="nav-link" href="#instructions">Intructions</a>
+          </div>
+          <form class="d-flex justify-content-md-end ms-auto">
+            <a
+              href="https://www.github.com/rahmatagungj/indonesia-komandan-paskibraka"
+              target="_blank"
+              class="btn btn-outline-light mr-2"
+              >Github</a
+            >
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container-xxl">
+      <div
+        class="spinner-grow text-danger position-absolute top-50 start-50"
+        role="status"
+        id="spinner"
+      >
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="row my-4" id="content" style="display: none">
+        <div class="col-md-6 col-sm-12">
+          <h2 class="fs-4" id="question">Question</h2>
+          <div id="question-details"></div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2 class="fs-4" id="submited-solutions">Submited Solutions</h2>
+          <div class="accordion" id="pull-request"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+  <script src="./scripts/script.js"></script>
+</html>
